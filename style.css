@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+.header {
+  background-color: red;
+  width: 100%;
+  height: 200px;
+}
+
+.container {
+  background-color: blue;
+  width: 100px;
+}
+
+.navbar-svg {
+  width: 1.4rem;
+}

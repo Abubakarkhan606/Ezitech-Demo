@@ -83,6 +83,7 @@ ul {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  stroke: #fff;
   /* padding: 0 3rem; */
 }
 
@@ -141,11 +142,18 @@ ul {
   color: #fff;
   font-weight: 900;
   font-size: 1.6rem;
+  transition: all 0.2s;
+}
+
+.navbar-links-list li a:hover {
+  color: #1971c2;
 }
 
 .like-search a svg {
   width: 3.2rem;
+  padding: 0.4rem;
   margin-right: 1rem;
+  color: #fff;
 }
 
 .like-search {
@@ -153,8 +161,14 @@ ul {
   justify-content: space-between;
 }
 
+.like-search a:first-child svg:hover {
+  background-color: green;
+  border-radius: 50%;
+}
+
 .like-search a:last-child svg {
-  border: 3px solid #1971c2;
+  border: 4px solid #fff;
+  padding: 0.4rem;
 }
 
 /* Hero Section */
@@ -195,7 +209,7 @@ ul {
 }
 
 .hero-background-overlay {
-  background-color: #1971c2;
+  background-color: rgba(4, 45, 137, 0.51);
   opacity: 0.7;
   position: absolute;
   width: 100%;
@@ -217,9 +231,6 @@ ul {
 }
 
 .hero-text {
-}
-
-.hero-text {
   max-width: 50rem;
   max-height: 7rem;
   padding: 2rem 3.6rem;
@@ -229,8 +240,16 @@ ul {
   font-size: 2rem;
 }
 
+.hero-side-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
 .hero-side-links a img {
-  max-width: 20rem;
+  /* max-width: 20rem; */
+  width: 20rem;
 }
 
 .awards-section {
@@ -524,7 +543,7 @@ ul {
 }
 
 .internhships-background-overlay {
-  background-color: #1971c2;
+  background-color: rgba(4, 45, 137, 0.51);
   opacity: 0.7;
   position: absolute;
   width: 100%;
@@ -650,4 +669,213 @@ ul {
   border-radius: 50%;
   background-color: #1971c2;
   /* transform: translate(55rem, 4rem); */
+}
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  background-image: url("https://ezitech.org/wp-content/uploads/2018/08/photo-1461749280684-dccba630e2f6-4-1299x999.jpeg");
+  position: relative;
+  z-index: -999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+}
+
+.footer-background-overlay {
+  background-color: rgba(4, 45, 137, 0.51);
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -99;
+  top: 0;
+}
+
+.footer-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+  padding: 3.2rem 0;
+  width: 30%;
+  text-align: center;
+}
+
+.footer-heading {
+  font-size: 2.4rem;
+  color: #fff;
+  font-size: 4.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.footer-body {
+  background-color: #042d89;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 34rem 30rem 20rem 30rem;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  column-gap: 1.6rem;
+  position: relative;
+  padding-bottom: 4.6rem;
+}
+
+.footer-body-background {
+  background-color: #042d89;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: -9;
+  transform: translate(0, -20rem);
+}
+
+.footer-about {
+  /* width: 25%; */
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.footer-about h3 {
+  font-size: 2rem;
+}
+
+.footer-about p {
+  font-size: 1.4rem;
+  width: 80%;
+  line-height: 2.2rem;
+}
+
+.footer-courses {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  /* width: 25%; */
+}
+
+.footer-course {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  /* text-wrap: nowrap; */
+  width: 100%;
+}
+
+.footer-courses-name {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.footer-courses-source {
+  font-size: 1.6rem;
+  color: #999;
+}
+
+.footer-pages {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: left; */
+  align-items: left;
+  gap: 3.2rem;
+  width: 25%;
+}
+
+.footer-pages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: disc;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  width: 100%;
+}
+
+.footer-courses-location,
+.footer-courses-phone,
+.footer-courses-msg {
+  display: flex;
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.footer-courses-svg {
+  width: 2rem;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: none;
+  width: 100%;
+  margin: none;
+}
+
+.footer-bottom-copyright {
+  background-color: #042d89;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+}
+.footer-bottom-copyright p {
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 1.6rem;
+  width: 100%;
+}
+
+.footer-social-links {
+  /* width: 100%; */
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  stroke: #fff;
+}
+
+.footer-social-links li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-details-social {
+  display: flex;
+  justify-content: end;
+  background-color: #042d89;
+  /* display: block; */
+  /* width: 100%; */
+  margin: none;
+  padding: 0.6rem 3.2rem;
+}
+
+.whatsapp-link {
+  display: flex;
+  position: absolute;
+  bottom: 1vh;
+  left: 2rem;
+  gap: 1.6rem;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-link p {
+  background-color: #eee;
+  padding: 0.6rem;
+}
+
+.whatsapp-link svg {
+  width: 4rem;
+  background-color: #042d89;
+  border-radius: 50%;
+  padding: 0.5rem;
 }
